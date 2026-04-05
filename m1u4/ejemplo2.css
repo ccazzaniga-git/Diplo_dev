@@ -1,0 +1,62 @@
+.cajadetexto{
+    background-color:rgba(6, 139, 255, 0);
+    font-family: "Montserrat", sans-serif;
+    font-variant: thin;
+    width: 450px;
+    height: 150px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 0px 25px 25px 0px; /* bordes redondeados der */
+    margin-left: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.199);
+    /* eje X - eje Y - Blur - Color */
+}
+ /*   font-family: "Montserrat", sans-serif; */
+
+.icono{
+    font-size: 40px;
+}
+/*   iconos extraidos de fontawesome
+ hice la prueba por fuera de mi idea original para no pifiarla*/
+
+.titulos{
+    color: aliceblue;
+    background-color:rgb(33, 108, 173);
+    font-family: "Montserrat", sans-serif;
+    width: 290px;
+    height: 90px;
+    padding: 5px 1px 20px 20px;
+    /*arriba - derecha - abajo - izquierda*/
+    box-sizing: border-box;
+    border-radius: 25px; /* bordes redondeados */
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+}
+/* me gusto este estilo de bloque */
+
+.textosecundario{
+    font-size: 15px;
+   column-count: 2;
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-gap: 40px;
+-webkit-column-gap: 40px;
+-moz-column-gap: 40px;
+column-rule: 2px dotted rgba(18,121,0,0.77);
+-webkit-column-rule: 2px dotted rgba(18,121,0,0.77);
+-moz-column-rule: 2px dotted rgba(18,121,0,0.77);
+}
+
+
+/* css de "glass" estilo vidrio que se tiene que superponer y no se hacerlo
+.detallevidrio{
+background: rgba(255, 255, 255, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.7px);
+-webkit-backdrop-filter: blur(3.7px);
+border: 1px solid rgba(255, 255, 255, 0.19);
+}
+*/
+
+/* comentarios */
