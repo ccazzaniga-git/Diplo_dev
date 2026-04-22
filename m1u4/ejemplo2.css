@@ -30,7 +30,7 @@
     box-sizing: border-box;
     border-radius: 25px; /* bordes redondeados */
     margin: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.295);
 }
 /* me gusto este estilo de bloque */
 
@@ -47,16 +47,47 @@ column-rule: 2px dotted rgba(18,121,0,0.77);
 -moz-column-rule: 2px dotted rgba(18,121,0,0.77);
 }
 
+.textoprincipal{
+    color: beige;
+}
+
+.fondo{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
 
 /* css de "glass" estilo vidrio que se tiene que superponer y no se hacerlo
-.detallevidrio{
-background: rgba(255, 255, 255, 0.17);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.7px);
--webkit-backdrop-filter: blur(3.7px);
-border: 1px solid rgba(255, 255, 255, 0.19);
+
+aplicalo en una imagen. y despues deberias posicionarlo.
+
+<div class="contenedor-padre"> <img src="tu-imagen-de-fondo.jpg" alt="Fondo" class="imagen-fondo"> <div class="detallevidrio"> <h2>Título sobre el vidrio</h2> <p>Este contenido flota sobre el fondo.</p> </div> </div>
+-------------
+
+css
+.contenedor-padre { 
+    position: relative; width: 100%; height: 400px;
 }
-*/
+
+.imagen-fondo {
+    width: 100%; height: 100%; object-fit: cover;
+} 
+
+ .detallevidrio {  /*lo de la pagina*/
+/* background: rgba(255, 255, 255, 0.17); 
+ border-radius: 16px; 
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+ backdrop-filter: blur(3.7px);
+ -webkit-backdrop-filter: blur(3.7px); 
+ border: 1px solid rgba(255, 255, 255, 0.19);
+
+ /* ESTO ES LO QUE FALTA PARA SUPERPONER*/
+
+ /* position: absolute; /* Para que flote */
+ /* top: 50%; /* Centrado vertical */
+ /* left: 50%; /* Centrado horizontal */
+ /*  z-index: 10; /* Asegura que esté por encima de todo */
+ /* color: white; */
+
 
 /* comentarios */
