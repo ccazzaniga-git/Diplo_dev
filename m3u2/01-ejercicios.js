@@ -53,6 +53,24 @@ function Mayor(numeros) {
 console.log(Mayor(numeros));
 
 
+// solo estaba probando un ejercicio mientras leo el teórico 
+
+var nota1 = `0`; 
+
+if ( nota1 = [`1`, `2`, `3`, `4`, `5`])
+    console.log(`El alumno esta desaprobado`);
+
+else if ( nota1 = [`6`, `7`, `8`])
+    console.log(`El alumno esta aprobado`);
+
+else if( nota1 = [`9`, `10`])
+    console.log(`El alumno destaca`);
+
+else (nota1 = `0`);{
+    var nota1 = `AUSENTE`
+ }
+
+
 
 // const num1 = 15;
 // const num2 = 20;
