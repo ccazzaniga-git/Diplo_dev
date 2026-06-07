@@ -13,14 +13,18 @@
 // Ejercicio 2: Estructura de control
 // Quise resolverlo con arrays pero se extrendia demasiado pero lo dejo para no borrarlo     const.transporte = [pie, bici, colectivo, auto, avion]; let.distancia = {i [0] >=1000} , {i [1] <=1001 , >=10000 } , {i [2] <=10001 , >=30000 } , {i [3] <=30001 , >=100000 } , {i [4] <100000 }  investigue yme recomendo la ia que deberia asignarle los valores a cada transporte dentro del array
 
-let distancia = 33332;
-let transporte;
+let distancia = 778;
+let transporte = ``;
 
-if (distancia <= 1000) { transporte = "a pie"; }
-else if (distancia <= 10000) { transporte = "en bici"; }
-else if (distancia <= 30000) { transporte = "en colectivo"; }
-else if (distancia <= 100000) { transporte = "en auto"; }
-else { transporte = "en avion"; }
+if (distancia < 0 && distancia <= 1000) {
+    transporte = `a pie`; }
+else if (distancia <= 10000) {
+    transporte = `en bici`; }
+else if (distancia <= 30000) {
+    transporte = `en colectivo`; }
+else if (distancia <= 100000) {
+    transporte = `en auto`; }
+else { transporte = `en avion`; }
 
 console.log(`El transporte recomendado para recorrer ${distancia} metros es ${transporte}`);
 
@@ -29,8 +33,9 @@ console.log(`El transporte recomendado para recorrer ${distancia} metros es ${tr
 
 // Ejercicio 3: Bucles
 
-const producto = ["carne", "arroz", "queso", "tomate", "pera", "manzana", "leche", "pan", "huevo", "azucar"];
-for (let i = 0; i < producto.length; i++) { console.log(i, `No te olvides de comprar ${producto[i]}`); }
+const producto = ['carne', 'arroz', 'queso', 'tomate', 'pera', 'manzana', 'leche', 'pan', 'huevo', 'azucar'];
+for (let i = 0; i < producto.length; i++) {
+    console.log(i, `No te olvides de comprar ${producto[i]}`); }
 
 
 
@@ -38,39 +43,41 @@ for (let i = 0; i < producto.length; i++) { console.log(i, `No te olvides de com
 
 // Ejercicio 4: Funciones (me costo horrores)
 
-const numeros = [1, 2, 3, 4, 5, 8];
+const numeros = [1, 55, 3, 82, 5, 8];
+let numeromasgrande = 0;
 
-function Mayor(numeros) {
-    let numeromasgrande = numeros[0];
+// function Mayor(numeros) {
+//     let numeromasgrande = numeros[0];
 
-    for (let i = 1; i < numeros.length; i++){
-        if (numeros[i] > numeromasgrande) {
-            numeromasgrande = numeros[i];
-        }
-    }
-    return numeromasgrande;
+for (let i = 1; i < numeros.length; i++){
+    if (numeros[i] > numeromasgrande) {
+        numeromasgrande = numeros[i];
+     }
 }
-console.log(Mayor(numeros));
+    // return numeromasgrande;
+
+// console.log(Mayor(numeros));
+console.log(`El mayor de estos numeros ${numeros} es ${numeromasgrande}`);
 
 
 // solo estaba probando un ejercicio mientras leo el teórico 
 
-var nota1 = `0`; 
+const nota1 = 0; {
 
-if ( nota1 = [`1`, `2`, `3`, `4`, `5`])
+if ( nota1 <= 5 )
     console.log(`El alumno esta desaprobado`);
 
-else if ( nota1 = [`6`, `7`, `8`])
+else if ( nota1 >= 6 && nota1 <= 8 )
     console.log(`El alumno esta aprobado`);
 
-else if( nota1 = [`9`, `10`])
+else if( nota1 >= 9 && nota1 <= 10 )
     console.log(`El alumno destaca`);
 
-else (nota1 = `0`);{
-    var nota1 = `AUSENTE`
+else {
+    let nota1 = `AUSENTE`
  }
-
-
+}
+console.log(`El alumno esta ${nota1}`);
 
 // const num1 = 15;
 // const num2 = 20;
